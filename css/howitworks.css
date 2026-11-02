@@ -1196,14 +1196,19 @@ header.navbar {
 
 /* VIDEO STARTS BELOW NAVBAR */
 
+/* =========================================
+   FULL-SCREEN VIDEO HERO
+========================================= */
+
 .video-hero {
     position: relative;
     display: block;
 
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 92px);
+
     min-height: 450px;
-    max-height: 850px;
+    max-height: none;
 
     margin: 0;
     padding: 0;
@@ -1219,13 +1224,14 @@ header.navbar {
     height: 100%;
 
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
 }
+
+/* MOBILE */
 
 @media (max-width: 768px) {
     .video-hero {
-        height: 55vh;
+        height: calc(100vh - 92px);
         min-height: 300px;
-        max-height: 550px;
     }
 }
