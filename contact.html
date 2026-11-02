@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="icon" type="image/x-icon" href="./Logo Files/Favicons/iPhone.png">
+    <title>Home</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="./index.html" class="logo"><img src="./Logo Files/png/Color logo - no background.png" alt=""></a>
+
+    <nav class="nav-pill">
+        <a href="./index.html">Home</a>
+        <a href="./howitworks.html">How it Works</a>
+        <a href="./about.html">About Us</a>
+        <a href="./privacypolicy.html">Privacy Policy</a>
+    </nav>
+
+    <a href="./contact.html" class="cta-btn">Contact / Demo</a>
+</header>
+  <button class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+    <!-- MOBILE FULLSCREEN MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+
+      <button class="close-menu" id="closeMenu">✕</button>
+
+      <nav class="mobile-nav">
+          <a href="./index.html">Home</a>
+          <a href="./howitworks.html">How it Works</a>
+          <a href="./about.html">About Us</a>
+          <a href="./privacypolicy.html">Privacy Policy</a>
+          <a href="./contact.html">Contact / Demo</a>
+      </nav>
+
+  </div>
+
+    <section class="contact-page">
+
+    <div class="contact-layout">
+
+    <!-- LEFT -->
+
+    <div class="contact-left">
+
+      <h1 class="reveal">
+        Reach Every Worker
+        Where They Already Are
+      </h1>
+
+      <p class="intro reveal delay-1">
+        No App. No Password. No Training.
+        Real Engagement. Real Results.
+      </p>
+
+      <div class="contact-info-block">
+
+        <h3 class="reveal">Chat to us</h3>
+
+        <p class="intro reveal delay-1">
+          Our friendly team is here to help.
+        </p>
+
+        <p class="intro reveal delay-1">
+
+          <a href="mailto:info@worksynow.com">
+            info@worksynow.com
+          </a>
+        </p>
+
+      </div>
+
+      <div class="contact-info-block reveal delay-2">
+
+        <h3 class="reveal">Call us</h3>
+
+        <p class="intro reveal delay-1">Mon–Fri from 9am - 5pm</p>
+
+        <p class="intro reveal delay-1">+21 000 0000</p>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT FORM -->
+
+    <!-- RIGHT SIDE: CALENDLY BOOKING -->
+
+    <div class="calendly-box">
+
+      <h2>Let's talk.</h2>
+
+      <p class="calendly-intro">
+        Book a time with our team to chat about Worksy,
+        explore how it works, or discuss how we can help
+        your organisation.
+      </p>
+
+      <!-- CALENDLY EMBED -->
+
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/YOUR-USERNAME/YOUR-EVENT?hide_gdpr_banner=1"
+        style="min-width: 280px; height: 650px;"
+      ></div>
+
+    </div>
+
+    <!-- LOAD CALENDLY WIDGET -->
+
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+      type="text/javascript">
+    </script>
+
+  </section>
+
+<!-- ====================================
+     NEWSLETTER SECTION
+==================================== -->
+
+<section class="newsletter-section">
+
+  <!-- BACKGROUND IMAGE -->
+
+  <img
+    src="./photos/eef8164981c4f53e7f485c00cc236354.jpg"
+    alt=""
+    class="newsletter-bg"
+  >
+
+  <div class="newsletter-overlay"></div>
+
+  <!-- CONTENT -->
+
+  <div class="newsletter-content">
+
+    <!-- LEFT -->
+
+    <h2 class="newsletter-title reveal">
+      Subscribe to Our
+      News Alerts
+    </h2>
+
+    <!-- RIGHT BOX -->
+
+    <div class="subscribe-box reveal delay-2">
+
+      <h3>
+        Get email alerts when new press releases are
+        published, and stay up to date on company news.
+      </h3>
+
+      <!-- SUBSCRIBE FORM -->
+
+      <!-- 
+        Replace YOUR_EMAIL@example.com
+        with your real email address
+      -->
+
+      <form
+        class="subscribe-form"
+        action="https://formsubmit.co/YOUR_EMAIL@example.com"
+        method="POST"
+      >
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="_subject" value="New Newsletter Subscription">
+
+        <input
+          type="email"
+          name="subscriber_email"
+          placeholder="Enter your email"
+          required
+        >
+
+        <button type="submit">
+          ↳ Subscribe
+        </button>
+
+      </form>
+
+      <p class="privacy-note">
+        By subscribing you agree to our
+        <a href="./privacypolicy.html">Privacy Policy</a>
+        and provide consent to receive updates from Worksy.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="footer">
+
+  <div class="footer-single-line">
+
+    <div class="footer-brand">
+      Worksy
+    </div>
+
+    <div class="footer-text">
+      Whatsapp-First Workforce Engagement for SAP Success Factors and Workday
+    </div>
+
+    <div class="footer-tagline">
+      Real Engagement. Real Results.
+    </div>
+
+    <div class="footer-links">
+      <a href="./index.html">Home</a>
+      <a href="./privacypolicy.html">Privacy Policy</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+
+    <div class="footer-cta">
+      <a href="#" class="footer-cta-btn">Connect with us</a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeMenu = document.getElementById('closeMenu');
+
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.add('active');
+  document.body.style.overflow = 'hidden'; // prevent scroll
+});
+
+closeMenu.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+  document.body.style.overflow = '';
+});
+
+// close when clicking a link
+document.querySelectorAll('.mobile-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+});
+</script>
+
+    <script>
+const reveals = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
+
+  });
+
+}, {
+  threshold: 0.15
+});
+
+reveals.forEach(el => observer.observe(el));
+</script>
+    </body>
+    </html>

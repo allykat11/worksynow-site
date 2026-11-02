@@ -1,0 +1,1244 @@
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('woff2');
+}
+
+.menu-toggle,
+.mobile-menu {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
+  letter-spacing: -0.2px;
+  background: radial-gradient(
+    circle at 20% 10%,
+    rgba(255, 235, 174, 0.15),
+    transparent 40%
+  ),
+  radial-gradient(
+    circle at 80% 60%,
+    rgba(0, 0, 0, 0.03),
+    transparent 35%
+  ),
+  #fff;
+}
+
+
+::selection {
+  background: #FFEBAE;
+  color: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans';
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  z-index: 10;
+}
+
+
+.logo {
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding: 10px 16px;
+  border: 1px solid #FFEBAE;
+  border-radius: 6px;
+
+  background: rgba(255,235,174,0.3);
+  transition: 0.2s;
+}
+
+
+.logo img {
+  height: 28px;   
+  width: auto;
+  display: block;
+  max-height: 100%;
+}
+
+.logo:hover{
+  background: #FFEBAE;
+  color: black;
+}
+
+
+.nav-pill {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+
+  padding: 8px 16px;
+  border: 1px solid #FFEBAE;
+  border-radius: 8px;
+  background: rgba(255,235,174,0.3); 
+  backdrop-filter: blur(6px);
+}
+
+
+.nav-pill a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  padding: 6px 10px;
+  transition: 0.2s;
+}
+
+.nav-pill a:hover {
+  background: #FFEBAE;
+  color: black;
+  border-radius: 4px;
+}
+
+
+.cta-btn {
+  background: rgba(255,235,174,0.3);
+  justify-self: end;
+  text-decoration: none;
+  padding: 10px 16px;
+  border: 1px solid #FFEBAE;
+  border-radius: 6px;
+  color: black;
+  transition: 0.2s;
+}
+
+.cta-btn:hover {
+  background: #FFEBAE;
+  color: black;
+}
+
+
+.contact-page {
+  width: 100%;
+  padding: 140px 80px;
+  background: transparent;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 100px;
+  align-items: start;
+  max-width: 1200px;
+  margin: auto;
+
+  position: relative;
+}
+
+.contact-layout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 52%;
+  width: 1px;
+  background: rgba(0,0,0,0.06);
+}
+
+/* LEFT SIDE */
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-left h1 {
+  font-size: 52px;
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  margin-bottom: 18px; 
+  max-width: 520px;
+}
+
+.contact-left .intro {
+  font-size: 20px;
+  line-height: 1.6;
+  opacity: 0.75;
+  margin-bottom: 10px; 
+  max-width: 480px;
+}
+
+.contact-info-block a {
+  color: #111; 
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.contact-info-block a:hover {
+  color: #000;
+  text-decoration: underline; 
+}
+
+.contact-info-block {
+  margin-bottom: 28px;
+  padding: 22px 24px;
+
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s ease;
+}
+
+.contact-info-block:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.08);
+}
+
+.contact-info-block h3 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.contact-info-block p {
+  font-size: 16px;
+  margin-bottom: 6px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+
+
+/* =========================
+    FORM
+========================== */
+
+.contact-form-box {
+  background: rgba(234, 219, 157, 0.75);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+
+  padding: 60px 50px;
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.08);
+
+  backdrop-filter: blur(14px);
+
+  position: sticky;
+  top: 100px;
+}
+
+.contact-form-box h2 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+
+.contact-form-box .form-intro {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+.contact-form{
+  display:flex;
+  flex-direction:column;
+  gap:26px;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.form-group label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  background: transparent;
+
+  padding: 12px 0;
+  font-size: 16px;
+
+  transition: 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 1px solid #111;
+  transform: none;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+  color:#9a9a9a;
+}
+
+
+.submit-btn{
+  width:100%;
+  height:58px;
+  border:none;
+  background:black;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  border-radius:4px;
+  margin-top:10px;
+  transition:0.3s ease;
+}
+
+.submit-btn:hover{
+  opacity:0.85;
+}
+
+/* =========================
+    NEWSLETTER SECTION
+========================== */
+
+.newsletter-section{
+  position:relative;
+  width:100%;
+  min-height:650px;
+  overflow:hidden;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+
+  padding:50px 60px 90px;
+  color:white;
+}
+
+.newsletter-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:1;
+}
+
+.newsletter-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.25);
+  z-index:2;
+}
+
+.newsletter-content{
+  position:relative;
+  z-index:3;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+
+.newsletter-title{
+  font-size:58px;
+  font-weight:300;
+  line-height:1.1;
+  max-width:380px;
+  margin-top:10px;
+}
+
+
+.subscribe-box{
+  width:100%;
+  max-width:760px;
+  background:rgba(234, 219, 157, 0.93);
+
+  padding:38px 34px;
+  margin-top:290px;
+  border-radius:4px;
+
+  color:#111;
+}
+
+.subscribe-box h3{
+  font-size:26px;
+  line-height:1.45;
+  font-weight:400;
+  margin-bottom:35px;
+  max-width:620px;
+}
+
+
+.subscribe-form{
+  display:flex;
+  gap:18px;
+  margin-bottom:22px;
+}
+
+.subscribe-form input{
+  flex:1;
+  height:58px;
+  border:none;
+  background:#d9d9d9;
+  padding:0 18px;
+  font-size:18px;
+  font-family:'Inter', sans-serif;
+  outline:none;
+}
+
+.subscribe-form button{
+  width:180px;
+  border:none;
+  background:#d9d9d9;
+  font-size:18px;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.subscribe-form button:hover{
+  opacity:0.8;
+}
+
+.privacy-note{
+  font-size:13px;
+  line-height:1.5;
+  max-width:620px;
+}
+
+.privacy-note a{
+  color:#111;
+  text-decoration:underline;
+}
+
+.footer {
+  background: linear-gradient(180deg, #1b1b1b, #141414);
+  padding: 30px 40px;
+  color: white;
+}
+
+.footer-single-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  max-width: 1400px;
+  margin: auto;
+
+  flex-wrap: wrap; 
+}
+
+.footer-brand {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFEBAE;
+  letter-spacing: -0.5px;
+}
+
+.footer-text,
+.footer-tagline {
+  font-size: 12px;
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #FFEBAE;
+}
+
+.footer-cta-btn {
+  font-size: 13px;
+  padding: 8px 14px;
+  border: 1px solid #FFEBAE;
+  border-radius: 999px;
+  color: #FFEBAE;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.footer-cta-btn:hover {
+  background: #FFEBAE;
+  color: #111;
+}
+
+/* =========================================
+   PREMIUM REVEAL ANIMATION
+========================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+.contact-form-box,
+.subscribe-box {
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease,
+    background 0.45s ease;
+}
+
+.contact-form-box:hover,
+.subscribe-box:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.12);
+}
+
+.form-group input,
+.form-group textarea,
+.subscribe-form input {
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.subscribe-form input:focus {
+
+  border-color: black;
+  background: rgba(255,255,255,0.4);
+
+  transform: translateY(-2px);
+}
+
+.submit-btn,
+.subscribe-form button,
+.cta-btn {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.submit-btn:hover,
+.subscribe-form button:hover,
+.cta-btn:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.15);
+}
+
+.newsletter-bg {
+  animation: slowZoom 18s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+
+}
+
+.contact-left h1,
+.newsletter-title {
+  animation: fadeHero 1.2s ease forwards;
+}
+
+@keyframes fadeHero {
+
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+
+.nav-pill,
+.cta-btn {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 24px;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  background: rgba(255,235,174,0.15);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid #FFEBAE;
+  border-radius: 12px;
+
+  cursor: pointer;
+  z-index: 2000;
+}
+
+.menu-toggle span {
+  width: 22px;
+  height: 2px;
+
+  background: #FFEBAE;
+  border-radius: 2px;
+}
+
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0,0,0,0.96);
+  backdrop-filter: blur(18px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.35s ease;
+
+  z-index: 1999;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-menu {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,235,174,0.15);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid #FFEBAE;
+  border-radius: 12px;
+
+  color: #FFEBAE;
+  font-size: 28px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+
+  z-index: 2001;
+}
+
+.close-menu:hover {
+  background: #FFEBAE;
+  color: black;
+
+  transform: rotate(90deg);
+}
+
+.close-menu:hover {
+  background: #FFEBAE;
+  color: black;
+
+  transform: rotate(90deg);
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  text-align: center;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 42px;
+  font-weight: 300;
+
+  transition: 0.2s ease;
+}
+
+.mobile-nav a:hover {
+  color: #FFEBAE;
+}
+
+  .contact-page {
+    padding: 140px 40px 80px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .contact-left h1 {
+    font-size: 42px;
+    max-width: 100%;
+  }
+
+  .contact-left .intro {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+
+  .contact-form-box {
+    width: 100%;
+  }
+
+  .newsletter-section {
+    padding: 60px 20px;
+  }
+
+  .newsletter-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .newsletter-title {
+    font-size: 34px;
+    line-height: 1.1;
+  }
+
+  .subscribe-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 18px;
+    margin-top: 0;
+  }
+
+  .subscribe-box h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+.subscribe-form input {
+  flex: 1;
+  height: 68px;         
+  border: none;
+  background: #d9d9d9;
+  padding: 0 22px;    
+  font-size: 16px;      
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  padding: 10px;
+}
+
+  .subscribe-form button {
+    width: 100%;
+    height: 52px;
+    font-size: 15px;
+  }
+
+  .privacy-note {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .subscribe-box {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+
+  .subscribe-form input,
+  .subscribe-form button {
+    border-radius: 10px;
+  }
+
+  .subscribe-box {
+    border-radius: 14px;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-single-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+
+    max-width: 100%;
+  }
+
+
+  .footer-brand {
+    font-size: 18px;
+  }
+
+
+  .footer-text,
+  .footer-tagline {
+    font-size: 12px;
+    opacity: 0.65;
+    white-space: normal; 
+    line-height: 1.4;
+  }
+
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+
+
+  .footer-cta {
+    width: 100%;
+  }
+
+  .footer-cta-btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    padding: 10px 14px;
+    border-radius: 12px;
+  }
+
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .contact-page {
+    padding: 180px 20px 60px;
+  }
+
+  .contact-left h1 {
+    font-size: 34px;
+    line-height: 1.1;
+  }
+
+  .contact-left .intro {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .contact-info-block {
+    margin-bottom: 40px;
+  }
+
+  .contact-info-block h3 {
+    font-size: 24px;
+  }
+
+  .contact-info-block p {
+    font-size: 18px;
+  }
+
+  .contact-form-box {
+    padding: 32px 24px;
+  }
+
+  .contact-form-box h2 {
+    font-size: 36px;
+  }
+
+  .contact-form-box .form-intro {
+    font-size: 18px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 15px;
+  }
+
+  .submit-btn {
+    height: 54px;
+  }
+
+
+}
+
+/* =========================================
+   SMALL MOBILE DEVICES
+========================================= */
+
+@media (max-width: 480px) {
+
+  .contact-left h1 {
+    font-size: 28px;
+  }
+
+  .newsletter-title {
+    font-size: 30px;
+  }
+
+  .contact-form-box h2 {
+    font-size: 30px;
+  }
+
+  .nav-pill {
+    border-radius: 16px;
+  }
+
+  .nav-pill a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .connect-btn {
+    font-size: 22px;
+  }
+
+}
+
+
+/* =========================
+   CALENDLY BOOKING BOX
+========================== */
+
+.calendly-box {
+  position: static !important;
+  top: auto !important;
+  align-self: start;
+
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  margin: 0;
+
+  background: rgba(234, 219, 157, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  padding: 40px 32px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(14px);
+
+  /* No floating or movement */
+  transform: none !important;
+  transition: box-shadow 0.3s ease;
+}
+
+.calendly-box:hover {
+  transform: none !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+}
+
+.calendly-box h2 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.calendly-intro {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.75;
+  margin-bottom: 24px;
+}
+
+/* Calendly iframe container */
+
+.calendly-box .calendly-inline-widget {
+  display: block;
+  position: relative !important;
+
+  width: 100%;
+  min-width: 0;
+  height: 650px;
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Keep the contact section separate from the newsletter */
+
+.contact-page {
+  position: relative;
+  display: flow-root;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  margin-bottom: 0;
+}
+
+.contact-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 64px;
+
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Desktop divider */
+
+.contact-layout::before {
+  left: 50%;
+}
+
+/* Newsletter must remain in normal page flow */
+
+.newsletter-section {
+  position: relative;
+  display: flex;
+  clear: both;
+
+  width: 100%;
+  height: auto;
+  min-height: 650px;
+
+  margin-top: 0;
+  z-index: 0;
+}
+
+/* =========================
+   TABLET
+========================== */
+
+@media (max-width: 1024px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .contact-layout::before {
+    display: none;
+  }
+
+  .calendly-box {
+    position: static !important;
+    width: 100%;
+    padding: 36px 28px;
+  }
+
+  .calendly-box .calendly-inline-widget {
+    height: 700px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .calendly-box {
+    position: static !important;
+    padding: 28px 18px;
+    border-radius: 14px;
+  }
+
+  .calendly-box h2 {
+    font-size: 32px;
+  }
+
+  .calendly-intro {
+    font-size: 16px;
+  }
+
+  .calendly-box .calendly-inline-widget {
+    height: 720px;
+  }
+
+  .contact-page {
+    padding-bottom: 60px;
+  }
+
+  .newsletter-section {
+    min-height: 0;
+    padding: 60px 20px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width: 480px) {
+  .calendly-box {
+    padding: 24px 12px;
+  }
+
+  .calendly-box h2 {
+    font-size: 28px;
+  }
+
+  .calendly-box .calendly-inline-widget {
+    height: 740px;
+  }
+}
+
+
+
+/* CONTACT PAGE LAYOUT FIX */
+
+/* Keep the contact content in two columns */
+.contact-layout {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 48px;
+  width: 100%;
+}
+
+/* Keep Calendly in the normal document flow */
+.calendly-box {
+  position: static !important;
+  top: auto !important;
+  align-self: start;
+  width: 100%;
+  min-width: 0;
+  transform: none !important;
+}
+
+/* Newsletter must sit BELOW the contact columns */
+.newsletter-section {
+  display: block !important;
+  position: relative !important;
+  float: none !important;
+  clear: both;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  margin: 60px 0 0 !important;
+  transform: none;
+}
+
+/* Footer must sit BELOW the newsletter */
+footer,
+.site-footer,
+#shopify-section-footer {
+  position: relative;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Tablet and mobile */
+@media (max-width: 768px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .newsletter-section {
+    margin-top: 40px !important;
+  }
+}

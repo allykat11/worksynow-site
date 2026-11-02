@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/howitworks.css">
+    <link rel="icon" type="image/x-icon" href="./Logo Files/Favicons/iPhone.png">
+    <title>How it Works</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="./index.html" class="logo"><img src="./Logo Files/png/Color logo - no background.png" alt=""></a>
+
+        <nav class="nav-pill">
+            <a href="./index.html">Home</a>
+            <a href="./howitworks.html">How it Works</a>
+            <a href="./about.html">About Us</a>
+            <a href="./privacypolicy.html">Privacy Policy</a>
+        </nav>
+
+        <a href="./contact.html" class="cta-btn">Contact / Demo</a>
+    </header>
+
+
+    <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MOBILE FULLSCREEN MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <button class="close-menu" id="closeMenu">✕</button>
+
+        <nav class="mobile-nav">
+            <a href="./index.html">Home</a>
+            <a href="./howitworks.html">How it Works</a>
+            <a href="./about.html">About Us</a>
+            <a href="./privacypolicy.html">Privacy Policy</a>
+            <a href="./contact.html">Contact / Demo</a>
+        </nav>
+
+    </div>
+
+<section class="video-hero">
+
+    <video
+        id="heroVideo"
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline
+        preload="auto"
+    >
+
+        <source src="./video/worksy-demo1.mp4" type="video/mp4">
+
+        Your browser does not support HTML video.
+    </video>
+
+</section>
+
+      <section class="process-section">
+
+    <div class="process-grid">
+
+      <!-- LEFT -->
+      <div class="process-left">
+
+        <div class="top-label reveal">How It Works</div>
+
+        <h2 class="process-title reveal delay-1">Our Process</h2>
+
+        <p class="process-description reveal delay-2">
+          Worksy relays HR information from SAP and Workday to an employee’s
+          personal WhatsApp on their personal mobile phone at
+          the direction of our business customer (the employer).
+        </p>
+
+        <div class="process-steps">
+
+          <!-- STEP 1 -->
+          <div class="step reveal delay-1">
+
+            <div class="step-number">01</div>
+
+            <div class="step-content">
+              <h3>SAP Employee Central / Workday HCM</h3>
+              <p>Employee Data, Payroll, Leave</p>
+            </div>
+
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="step reveal delay-2">
+
+            <div class="step-number">02</div>
+
+            <div class="step-content">
+              <h3>Worksy Engine</h3>
+              <p>Branding, Formatting, Secure Processing</p>
+            </div>
+
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="step reveal delay-3">
+
+            <div class="step-number dark">03</div>
+
+            <div class="step-content">
+              <h3>WhatsApp</h3>
+              <p>Direct to Worker’s Mobile</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="process-image reveal delay-4">
+        <img src="./photos/industrial workers.jpg" alt="Industrial workers">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================
+     FEATURE SLIDER SECTION
+========================================= -->
+
+<section class="feature-slider-section">
+
+  <div class="slider-wrapper">
+
+    <div class="slides" id="slides">
+
+      <!-- =========================================
+           SLIDE 1
+      ========================================= -->
+
+      <div class="slide">
+
+        <div class="phone-image">
+          <img src="./photos/slide1.png" alt="">
+        </div>
+
+        <div class="slide-content reveal">
+
+          <h2>Branded Newsletters</h2>
+
+          <h3>
+            Revolutionise your<br>
+            communication channels
+          </h3>
+
+          <p>
+            Company news, updates, and announcements
+            in a professional, on-brand format.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- =========================================
+           SLIDE 2
+      ========================================= -->
+
+      <div class="slide">
+
+        <div class="phone-image">
+          <img src="./photos/slide2.png" alt="">
+        </div>
+
+        <div class="slide-content reveal">
+
+          <h2>Digital Payslips</h2>
+
+          <h3>
+            No more struggling to access payslips
+          </h3>
+
+          <p>
+            Secure, branded payslip delivery every month
+            — no printing, no distribution hassle.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- =========================================
+           SLIDE 3
+      ========================================= -->
+
+      <div class="slide">
+
+        <div class="phone-image">
+          <img src="./photos/slide3.png" alt="">
+        </div>
+
+        <div class="slide-content reveal">
+
+          <h2>Leave Requests</h2>
+
+          <h3>
+            Simplify workforce communication
+          </h3>
+
+          <p>
+            Employees can receive leave balances,
+            updates, and HR notifications instantly
+            through WhatsApp.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- =========================================
+         ARROWS
+    ========================================= -->
+
+    <button class="slider-arrow left" onclick="prevSlide()">
+      &#10094;
+    </button>
+
+    <button class="slider-arrow right" onclick="nextSlide()">
+      &#10095;
+    </button>
+
+  </div>
+
+  <!-- =========================================
+       DOTS
+  ========================================= -->
+
+  <div class="slider-dots">
+
+    <div class="dot active" onclick="goToSlide(0)"></div>
+    <div class="dot" onclick="goToSlide(1)"></div>
+    <div class="dot" onclick="goToSlide(2)"></div>
+
+  </div>
+
+</section>
+
+<section class="last-mile-section reveal">
+
+  <!-- BACKGROUND -->
+  <img 
+    src="./photos/lastmileprob.jpg" 
+    alt="" 
+    class="last-mile-bg"
+  >
+
+  <!-- OVERLAY -->
+  <div class="last-mile-overlay"></div>
+
+  <!-- CONTENT -->
+  <div class="last-mile-content">
+
+    <!-- HEADING -->
+    <div class="last-mile-heading">
+
+      <h2>Solving SAP and Workday’s Last-Mile Problem</h2>
+
+      <p>
+        SAP SuccessFactors has 12K+ enterprise customers and 215M+
+        users worldwide. But millions of frontline workers remain
+        unreached. Worksy bridges that gap.
+      </p>
+
+    </div>
+
+    <!-- CARDS -->
+    <div class="benefit-grid">
+
+      <div class="benefit-card">
+        <p>
+          Turns SAP into a
+          real-time, two-
+          way channel
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <p>
+          Reaches workers
+          without desks or
+          email
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <p>
+          High adoption:
+          workers already
+          use WhatsApp
+        </p>
+      </div>
+
+      <div class="benefit-card">
+        <p>
+          Fewer payroll
+          queries, better
+          compliance
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="footer">
+
+  <div class="footer-single-line">
+
+    <div class="footer-brand">
+      Worksy
+    </div>
+
+    <div class="footer-text">
+      Whatsapp-First Workforce Engagement for SAP Success Factors and Workday
+    </div>
+
+    <div class="footer-tagline">
+      Real Engagement. Real Results.
+    </div>
+
+    <div class="footer-links">
+      <a href="./index.html">Home</a>
+      <a href="./privacypolicy.html">Privacy Policy</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+
+    <div class="footer-cta">
+      <a href="#" class="footer-cta-btn">Connect with us</a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<script>
+
+  let currentSlide = 0;
+
+  const slides = document.getElementById("slides");
+  const dots = document.querySelectorAll(".dot");
+
+  const totalSlides = 3;
+
+  function updateSlider(){
+
+    const slideWidth = slides.children[0].offsetWidth;
+
+    slides.style.transform =
+      `translateX(-${currentSlide * slideWidth}px)`;
+
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[currentSlide].classList.add("active");
+
+  }
+
+  function nextSlide(){
+
+    currentSlide++;
+
+    if(currentSlide >= totalSlides){
+      currentSlide = 0;
+    }
+
+    updateSlider();
+
+  }
+
+  function prevSlide(){
+
+    currentSlide--;
+
+    if(currentSlide < 0){
+      currentSlide = totalSlides - 1;
+    }
+
+    updateSlider();
+
+  }
+
+  function goToSlide(index){
+
+    currentSlide = index;
+    updateSlider();
+
+  }
+
+</script>
+
+ <script>
+
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+
+    menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.add('active');
+    });
+
+    closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    });
+
+</script>
+
+<script>
+
+  const reveals = document.querySelectorAll('.reveal');
+
+  const revealOnScroll = () => {
+
+  reveals.forEach(el => {
+
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    if(elementTop < windowHeight - 100){
+      el.classList.add('active');
+    }
+
+  });
+
+};
+
+window.addEventListener('scroll', revealOnScroll);
+
+revealOnScroll();
+
+window.addEventListener('scroll', () => {
+
+  const scrolled = window.pageYOffset;
+
+  const processImage = document.querySelector('.process-image img');
+  const bgImage = document.querySelector('.last-mile-bg');
+
+  if(processImage){
+    processImage.style.transform =
+      `translateY(${scrolled * 0.05}px) scale(1.04)`;
+  }
+
+  if(bgImage){
+    bgImage.style.transform =
+      `translateY(${scrolled * 0}px) scale(1.08)`;
+  }
+
+});
+
+</script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const heroVideo = document.getElementById("heroVideo");
+
+    if (heroVideo) {
+
+        heroVideo.muted = true;
+        heroVideo.defaultMuted = true;
+        heroVideo.playsInline = true;
+
+        heroVideo.play().catch(function(error) {
+            console.log("Video autoplay failed:", error);
+        });
+
+        heroVideo.addEventListener("error", function() {
+            console.log("Video loading error:", heroVideo.error);
+        });
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

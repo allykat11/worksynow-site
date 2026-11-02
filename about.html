@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="icon" type="image/x-icon" href="./Logo Files/Favicons/iPhone.png">
+    <title>Home</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="./index.html" class="logo"><img src="./Logo Files/png/White logo - no background.png" alt=""></a>
+
+        <nav class="nav-pill">
+            <a href="./index.html">Home</a>
+            <a href="./howitworks.html">How it Works</a>
+            <a href="./about.html">About Us</a>
+            <a href="./privacypolicy.html">Privacy Policy</a>
+        </nav>
+
+        <a href="./contact.html" class="cta-btn">Contact / Demo</a>
+    </header>
+    <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- MOBILE FULLSCREEN MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <button class="close-menu" id="closeMenu">✕</button>
+
+        <nav class="mobile-nav">
+            <a href="./index.html">Home</a>
+            <a href="./howitworks.html">How it Works</a>
+            <a href="./about.html">About Us</a>
+            <a href="./privacypolicy.html">Privacy Policy</a>
+            <a href="./contact.html">Contact / Demo</a>
+        </nav>
+
+    </div>
+
+    <section class="what-we-do" class="what-we-do fade-up">
+
+  <!-- BACKGROUND -->
+  <img 
+    src="./photos/whatwedo.jpg" 
+    alt="" 
+    class="what-we-do-bg"
+  >
+
+  <!-- OVERLAY -->
+  <div class="what-we-do-overlay"></div>
+
+  <!-- CONTENT -->
+  <div class="what-we-do-content">
+
+    <!-- TOP -->
+    <div class="top-grid">
+
+      <div>
+        <h2 class="section-title">
+          What We Do
+        </h2>
+      </div>
+
+      <div class="top-text fade-up fade-delay-1">
+
+        <p>
+          Worksy relays HR information from SAP and Workday to an employee’s
+          personal WhatsApp on their personal mobile phone at the
+          direction of our business customer (the employer).
+        </p>
+
+        <p>
+          Typical use cases are payslip delivery and leave processing.
+          Worksy does not conduct marketing, advertising, or profiling
+          via the Services, and does not sell or share personal
+          information for cross context behavioral advertising.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- LINE -->
+    <div class="divider"></div>
+
+    <!-- BOTTOM -->
+    <div class="bottom-grid">
+
+      <div class="bottom-left fade-up fade-delay-2">
+
+        <p>
+          For HR data we transmit on behalf of an employer, the employer
+          is the Controller/Responsible Party and Worksy is a
+          Processor/Operator under a written data processing agreement.
+        </p>
+
+        <p>
+          For our website, support, security and service logs, Worksy acts
+          as the Controller/Responsible Party.
+        </p>
+
+      </div>
+
+      <div class="bottom-right">
+
+        <h2 class="role-title fade-up fade-delay-3">
+          Our Role
+        </h2>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="contact-section" class="contact-section fade-up">
+
+  <div class="contact-container">
+
+    <!-- TITLE -->
+
+    <h2 class="contact-title">
+      Contact Us
+    </h2>
+
+    <!-- BLOCK 1 -->
+
+    <div class="contact-block">
+
+      <p>
+        Cape Town, South Africa, 7800
+        <br>
+        DPO: Mr. Ferdinand Steenkamp —
+
+        <a href="mailto:Ferdi@worksynow.com">
+          Ferdi@worksynow.com
+        </a>
+
+      </p>
+
+    </div>
+
+    <!-- BLOCK 2 -->
+
+    <div class="contact-block">
+
+      <p>
+        To complain in South Africa: Contact the Information
+        Regulator (SA), Woodmead North Office Park,
+        54 Maxwell Drive, Woodmead, Johannesburg, 2191;
+
+        <a href="mailto:POPIAComplaints@inforegulator.org.za">
+          POPIAComplaints@inforegulator.org.za
+        </a>;
+
+        010 023 5200.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="footer">
+
+  <div class="footer-single-line">
+
+    <div class="footer-brand">
+      Worksy
+    </div>
+
+    <div class="footer-text">
+      Whatsapp-First Workforce Engagement for SAP Success Factors and Workday
+    </div>
+
+    <div class="footer-tagline">
+      Real Engagement. Real Results.
+    </div>
+
+    <div class="footer-links">
+      <a href="./index.html">Home</a>
+      <a href="./privacypolicy.html">Privacy Policy</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+
+    <div class="footer-cta">
+      <a href="#" class="footer-cta-btn">Connect with us</a>
+    </div>
+
+  </div>
+
+</section>
+
+     <script>
+
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMenu = document.getElementById('closeMenu');
+
+        menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        });
+
+    </script>
+
+    </body>
+</html>
