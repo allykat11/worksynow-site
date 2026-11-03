@@ -1194,19 +1194,20 @@ header.navbar {
     z-index: 100;
 }
 
+
 /* =========================================
-   RESPONSIVE VIDEO HERO
+   VIDEO HERO - ALL SCREEN SIZES
 ========================================= */
 
 .video-hero {
-    position: relative;
     display: block;
+    position: relative;
 
     width: 100%;
-    height: auto;
+    height: auto !important;
 
-    min-height: 0;
-    max-height: none;
+    min-height: 0 !important;
+    max-height: none !important;
 
     margin: 0;
     padding: 0;
@@ -1219,50 +1220,35 @@ header.navbar {
 .video-hero video {
     display: block;
 
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
 
     max-width: 100%;
+    max-height: none;
 
     object-fit: contain;
     object-position: center;
 
+    margin: 0;
+    padding: 0;
 }
 
-/* =========================================
-   TABLET RESPONSIVE
-========================================= */
+/* TABLET */
 
 @media (max-width: 1024px) {
-
-    .video-hero {
-        width: 100%;
-        height: auto;
-    }
-
+    .video-hero,
     .video-hero video {
         width: 100%;
-        height: auto;
+        height: auto !important;
     }
-
 }
 
-/* =========================================
-   MOBILE RESPONSIVE
-========================================= */
+/* MOBILE */
 
 @media (max-width: 768px) {
-
-    .video-hero {
-        width: 100%;
-        height: auto;
-        min-height: 0;
-    }
-
+    .video-hero,
     .video-hero video {
         width: 100%;
-        height: auto;
-        object-fit: contain;
+        height: auto !important;
     }
-
 }
