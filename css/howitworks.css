@@ -1196,8 +1196,10 @@ header.navbar {
 
 /* VIDEO STARTS BELOW NAVBAR */
 
+
 /* =========================================
-   FULL-SCREEN VIDEO HERO
+   RESPONSIVE VIDEO HERO
+   Preserves original video dimensions
 ========================================= */
 
 .video-hero {
@@ -1205,9 +1207,9 @@ header.navbar {
     display: block;
 
     width: 100%;
-    height: calc(100vh - 92px);
+    height: auto;
 
-    min-height: 450px;
+    min-height: 0;
     max-height: none;
 
     margin: 0;
@@ -1215,23 +1217,56 @@ header.navbar {
 
     overflow: hidden;
     background: #111;
+    line-height: 0;
 }
 
 .video-hero video {
     display: block;
 
     width: 100%;
-    height: 100%;
+    height: auto;
 
-    object-fit: cover;
-    object-position: center center;
+    max-width: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
 }
 
-/* MOBILE */
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .video-hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-hero video {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
 
 @media (max-width: 768px) {
+
     .video-hero {
-        height: calc(100vh - 92px);
-        min-height: 300px;
+        width: 100%;
+        height: auto;
+        min-height: 0;
     }
+
+    .video-hero video {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
 }
