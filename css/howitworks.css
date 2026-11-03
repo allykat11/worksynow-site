@@ -1194,12 +1194,8 @@ header.navbar {
     z-index: 100;
 }
 
-/* VIDEO STARTS BELOW NAVBAR */
-
-
 /* =========================================
    RESPONSIVE VIDEO HERO
-   Preserves original video dimensions
 ========================================= */
 
 .video-hero {
